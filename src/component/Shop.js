@@ -448,8 +448,8 @@ class Shop extends Component  {
                             
                         </td>
                         <td></td>
-                        <td>Total</td>
-                        <td>{totalCount}</td>
+                        <td><b>Total</b></td>
+                        <td><b>{totalCount}</b></td>
                     </tr>
                     
                 </table>
