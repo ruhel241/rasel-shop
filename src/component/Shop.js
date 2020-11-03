@@ -23,10 +23,10 @@ class Shop extends Component  {
             pilotItem: '',
             pilotEx: '',
             pilotUnit: 5,
-        //captan
-            captanItem: '',
-            captanEx: '',
-            captanUnit: 10,
+        //capstan
+            capstanItem: '',
+            capstanEx: '',
+            capstanUnit: 10,
         //switch
             switchItem: '',
             switchEx: '',
@@ -82,15 +82,15 @@ class Shop extends Component  {
                 pilotEx: event.target.value 
             });
         }
-    //captan
-        captanItemChangHandler = (event) => {
+    //capstan
+        capstanItemChangHandler = (event) => {
             this.setState({ 
-                captanItem: event.target.value 
+                capstanItem: event.target.value 
             });
         }
-        captanExChangHandler = (event) => {
+        capstanExChangHandler = (event) => {
             this.setState({ 
-                captanEx: event.target.value 
+                capstanEx: event.target.value 
             });
         }
     //switch
@@ -162,10 +162,10 @@ class Shop extends Component  {
             pilotItem, 
             pilotEx, 
             pilotUnit,
-        // captan
-            captanItem, 
-            captanEx, 
-            captanUnit,
+        // capstan
+            capstanItem, 
+            capstanEx, 
+            capstanUnit,
         //switch
             switchItem, 
             switchEx, 
@@ -197,9 +197,9 @@ class Shop extends Component  {
     // pilot
         const pilotSale = pilotEx ? (pilotItem - pilotEx) : 0;
         const pilotTotal = pilotEx ? (pilotSale * pilotUnit) : 0;
-    // captan
-        const captanSale = captanEx ? (captanItem - captanEx) : 0;
-        const captanTotal = captanEx ? (captanSale * captanUnit) : 0;
+    // capstan
+        const capstanSale = capstanEx ? (capstanItem - capstanEx) : 0;
+        const capstanTotal = capstanEx ? (capstanSale * capstanUnit) : 0;
     // switch
         const switchSale = switchEx ? (switchItem - switchEx) : 0;
         const switchTotal = switchEx ? (switchSale * switchUnit) : 0;
@@ -216,7 +216,7 @@ class Shop extends Component  {
         const citySale = cityEx ? (cityItem - cityEx) : 0;
         const cityTotal = cityEx ? (citySale * cityUnit) : 0;
 
-        const totalCount = (derbyTotal + partnerTotal + pilotTotal + captanTotal + switchTotal + goldleafTotal + starTotal + bensonTotal + cityTotal)
+        const totalCount = (derbyTotal + partnerTotal + pilotTotal + capstanTotal + switchTotal + goldleafTotal + starTotal + bensonTotal + cityTotal)
 
 
         return (
@@ -308,26 +308,26 @@ class Shop extends Component  {
                         <td>{pilotTotal}</td>
                     </tr>
                     <tr>
-                        <td>Captan</td>
+                        <td>Capstan</td>
                         <td>
                             <input 
                                 type="number" 
-                                value={captanItem} 
+                                value={capstanItem} 
                                 style={{fontSize:"20px", width:"80px"}}
-                                onChange={this.captanItemChangHandler}
+                                onChange={this.capstanItemChangHandler}
                             />
                         </td>
                         <td>
                             <input 
                                 type="number" 
-                                value={captanEx} 
+                                value={capstanEx} 
                                 style={{fontSize:"20px", width:"80px"}}
-                                onChange={this.captanExChangHandler}
+                                onChange={this.capstanExChangHandler}
                             />
                         </td>
-                        <td>{captanSale}</td>
-                        <td>{captanUnit}</td>
-                        <td>{captanTotal}</td>
+                        <td>{capstanSale}</td>
+                        <td>{capstanUnit}</td>
+                        <td>{capstanTotal}</td>
                     </tr>
                     <tr>
                         <td>Switch</td>
