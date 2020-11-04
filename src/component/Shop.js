@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 import Container from '@material-ui/core/Container';
 
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-
 class Shop extends Component  {
     constructor(props) {
         super(props);
@@ -221,17 +215,6 @@ class Shop extends Component  {
 
         return (
             <Container maxWidth="lg">
-                <AppBar position="fixed">
-                    <Toolbar variant="dense">
-                    <IconButton edge="start" className="" color="inherit" aria-label="menu">
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography variant="h6" color="inherit">
-                        Rasel Brother's
-                    </Typography>
-                    </Toolbar>
-                </AppBar>
-                
                 <table className="tableClass">
                     <tr>
                         <th>Item Name</th>
